@@ -10,14 +10,12 @@ public class Waitress {
 	}
  
 	public void printMenu() {
+		menu.print();
 		Iterator<MenuComponent> iterator = menu.createIterator();
 
-		System.out.println("\n MENU\n----");
 		while (iterator.hasNext()) {
 			MenuComponent menuComponent = iterator.next();
-			try {
-					menuComponent.print();
-			} catch (UnsupportedOperationException e) {}
+			menuComponent.print();
 		}
 	}
   

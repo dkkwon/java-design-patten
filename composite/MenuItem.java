@@ -46,7 +46,6 @@ public class MenuItem extends MenuComponent {
 		System.out.println(", " + getPrice());
 		System.out.println("     -- " + getDescription());
 	}
-
 }
 
 

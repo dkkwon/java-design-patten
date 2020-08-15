@@ -1,10 +1,11 @@
 package iterator;
 
 import java.util.*;
-  
+ 
+// external iterator
 public class CompositeIterator implements Iterator<MenuComponent> {
 	Stack<Iterator<MenuComponent>> stack = new Stack<Iterator<MenuComponent>>();
-   
+
 	public CompositeIterator(Iterator<MenuComponent> iterator) {
 		stack.push(iterator);
 	}
