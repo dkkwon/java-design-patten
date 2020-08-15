@@ -12,18 +12,7 @@ public class CoffeeWithHook extends CaffeineBeverageWithHook {
 		System.out.println("Adding Sugar and Milk");
 	}
  
-	public boolean customerWantsCondiments() {
-
-		String answer = getUserInput();
-
-		if (answer.toLowerCase().startsWith("y")) {
-			return true;
-		} else {
-			return false;
-		}
-	}
- 
-	private String getUserInput() {
+	public String getUserInput() {
 		String answer = null;
 
 		System.out.print("Would you like milk and sugar with your coffee (y/n)? ");

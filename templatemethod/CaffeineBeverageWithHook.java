@@ -22,8 +22,19 @@ public abstract class CaffeineBeverageWithHook {
 	void pourInCup() {
 		System.out.println("Pouring into cup");
 	}
+
+	public String getUserInput() {
+		return "y";
+	}
  
-	boolean customerWantsCondiments() {
-		return true;
+	public boolean customerWantsCondiments() {
+
+		String answer = getUserInput();
+
+		if (answer.toLowerCase().startsWith("y")) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

@@ -12,18 +12,7 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
 		System.out.println("Adding Lemon");
 	}
  
-	public boolean customerWantsCondiments() {
-
-		String answer = getUserInput();
-
-		if (answer.toLowerCase().startsWith("y")) {
-			return true;
-		} else {
-			return false;
-		}
-	}
- 
-	private String getUserInput() {
+	public String getUserInput() {
 		// get the user's response
 		String answer = null;
 
