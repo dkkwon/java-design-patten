@@ -37,11 +37,10 @@ public class Menu extends MenuComponent {
 		System.out.print("\n" + getName());
 		System.out.println(", " + getDescription());
 		System.out.println("---------------------");
-  
-		Iterator<MenuComponent> iterator = menuComponents.iterator();
-		while (iterator.hasNext()) {
+
+			
+		for (MenuComponent menuComponent: menuComponents) {	
 			// recursive 하게 하위 항목을 찾게 한다
-			MenuComponent menuComponent = iterator.next();
 			menuComponent.print();
 		}
 	}
