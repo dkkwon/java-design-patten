@@ -32,6 +32,7 @@ public class Menu extends MenuComponent {
 		return description;
 	}
  
+	// print 역할과 recursive 순회하는 역할이 분리되지 않음
 	public void print() {
 		System.out.print("\n" + getName());
 		System.out.println(", " + getDescription());
@@ -39,6 +40,7 @@ public class Menu extends MenuComponent {
   
 		Iterator<MenuComponent> iterator = menuComponents.iterator();
 		while (iterator.hasNext()) {
+			// recursive 하게 하위 항목을 찾게 한다
 			MenuComponent menuComponent = iterator.next();
 			menuComponent.print();
 		}
