@@ -1,6 +1,9 @@
+// https://www.javatpoint.com/iterator-pattern
+
+import java.util.*;
 
 public interface Container {
 
-	public Iterator getIterator();
+	public Iterator<String> createIterator();
 	
 }

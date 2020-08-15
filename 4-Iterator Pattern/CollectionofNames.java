@@ -1,4 +1,8 @@
 
+// https://www.javatpoint.com/iterator-pattern
+
+import java.util.*;
+
 public class CollectionofNames implements Container {
 
 	 public String name[]={"Ashwani Rajput", "Soono Jaiswal","Rishi Kumar","Rahul Mehta","Hemant Mishra"}; 
@@ -11,13 +15,13 @@ public class CollectionofNames implements Container {
 		
 	
 	@Override
-	public Iterator getIterator() {
+	public Iterator<String> createIterator() {
 		
 		return new CollectionofNamesIterate() ;
 	}
 	
 	
-	private class CollectionofNamesIterate implements Iterator{
+	private class CollectionofNamesIterate implements Iterator<String> {
 		
 		int i;
 
@@ -30,7 +34,7 @@ public class CollectionofNames implements Container {
 		}
 
 		@Override
-		public Object next() {
+		public String next() {
 			if(this.hasNext()){
 	            return name[i++];
 			}
