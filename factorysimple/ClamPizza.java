@@ -1,4 +1,4 @@
-package factorymethod;
+package factorysimple;
 
 public class ClamPizza extends Pizza {
 	public ClamPizza() {

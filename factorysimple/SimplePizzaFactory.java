@@ -1,4 +1,4 @@
-package factorymethod;
+package factorysimple;
 
 public class SimplePizzaFactory {
 
