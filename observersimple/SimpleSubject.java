@@ -4,12 +4,8 @@ import java.util.*;
 
 public class SimpleSubject implements Subject {
 	// List Collection ?
-	private List<Observer> observers;
+	private List<Observer> observers = new ArrayList<Observer>();
 	private int value = 0;
-	
-	public SimpleSubject() {
-		observers = new ArrayList<Observer>();
-	}
 	
 	public void registerObserver(Observer o) {
 		observers.add(o);
