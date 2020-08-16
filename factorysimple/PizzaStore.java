@@ -1,11 +1,11 @@
 package factorysimple;
 
 public class PizzaStore {
-	// SimplePizzaFactory factory;
+	SimplePizzaFactory factory;
  
-	// public PizzaStore(SimplePizzaFactory factory) { 
-	// 	this.factory = factory;
-	// }
+	public PizzaStore(SimplePizzaFactory factory) { 
+		this.factory = factory;
+	}
  
 	public Pizza orderPizza(String type) {
 		Pizza pizza;
