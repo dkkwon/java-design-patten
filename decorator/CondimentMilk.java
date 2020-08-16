@@ -1,8 +1,10 @@
 package decorator;
 
 public class CondimentMilk extends CondimentDecorator {
+
 	public CondimentMilk(Beverage beverage) {
-		this.beverage = beverage;
+		super(beverage);
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getDescription() {
