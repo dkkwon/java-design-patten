@@ -3,12 +3,14 @@ package mediator;
 public class User2 extends Participant {
 
 	private String name;
-	private ApnaChatRoom chat;
+
+	public User2(ApnaChatRoom chat) {
+		super(chat);
+	}
 
 	@Override
 	public void sendMsg(String msg) {
-		this.chat.showMsg(msg, this);
-
+		getChat().showMsg(msg, this);
 	}
 
 	@Override
@@ -20,11 +22,4 @@ public class User2 extends Participant {
 	public String getName() {
 		return name;
 	}
-
-	public User2(ApnaChatRoom chat) {
-		this.chat = chat;
-	}
-
-
-
 }
