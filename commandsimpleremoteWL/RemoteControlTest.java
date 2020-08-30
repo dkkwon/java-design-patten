@@ -5,6 +5,8 @@ public class RemoteControlTest {
 		SimpleRemoteControl remote = new SimpleRemoteControl();
 		Light light = new Light();
 		GarageDoor garageDoor = new GarageDoor();
+
+		// 어떻게 가능하지? Java8 Functional Interface?
 		remote.setCommand(light::on);
 		remote.buttonWasPressed();
 		remote.setCommand(garageDoor::up);
