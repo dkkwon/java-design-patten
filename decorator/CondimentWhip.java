@@ -3,7 +3,7 @@ package decorator;
 public class CondimentWhip extends CondimentDecorator {
 	public CondimentWhip(Beverage beverage) {
 		super(beverage);
-		// TODO Auto-generated constructor stub
+		// Auto-generated constructor stub
 	}
 
 	public String getDescription() {
